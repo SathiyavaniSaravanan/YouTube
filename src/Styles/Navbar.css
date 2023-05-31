@@ -1,0 +1,41 @@
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+.searchBar input
+{
+    height: 40px;
+    width: 450px;
+    border-radius: 50px;
+    border: 1px solid gainsboro;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.searchBar input:focus
+{
+    outline: none;
+    border: 1px solid dodgerblue;
+}
+.userOptions
+{
+    display: flex;
+    flex-basis: 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+.userOptions p
+{
+    border: 1px solid gray;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
