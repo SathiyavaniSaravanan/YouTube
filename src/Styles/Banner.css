@@ -1,0 +1,10 @@
+.banner
+{
+    padding: 0 50px;
+    /* background-image: url(../Images/movie.webp); */
+}
+.banner img
+{
+    width: 100%;
+    height: 50vh;
+}

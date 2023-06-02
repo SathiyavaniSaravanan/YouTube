@@ -23,17 +23,18 @@
 .userOptions
 {
     display: flex;
-    flex-basis: 12%;
+    flex-basis: 10%;
     justify-content: space-between;
     align-items: center;
 }
 .userOptions p
 {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     height: 40px;
     width: 40px;
     border-radius: 20px;
-    background-color: gray;
+    background-color: crimson;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
