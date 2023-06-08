@@ -1,0 +1,29 @@
+
+.videos img
+{
+    height: 202px;
+    width: 360px;
+    border-radius: 10px;
+}
+.videoData
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.video
+{
+    width: 23%;
+}
+.videoDetails
+{
+    max-width: 360px;
+    margin-bottom: 30px;
+}
+.videoDetails h3
+{
+    margin: 5px 0px;
+}
+.videoDetails p
+{
+    margin: 5px 0px;
+}
