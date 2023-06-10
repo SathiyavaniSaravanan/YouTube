@@ -31,3 +31,27 @@
 .videoDetails p {
   margin: 5px 0px;
 }
+.shortsData
+{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.YTshorts
+{
+width: 164px;
+}
+.YTshorts img
+{
+  height: 290px;
+  width: 100%;
+  border-radius: 10px;
+}
+.YTshortsDetails h3 {
+  margin: 5px 0px;
+}
+.YTshortsDetails p {
+  margin: 5px 0px;
+}
