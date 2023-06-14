@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 
-.videos {
-  /* width: 100%; */
+.videos>h1{
+  padding: 0 50px;
 }
 
 .videoData {
@@ -30,6 +30,9 @@
 }
 .videoDetails p {
   margin: 5px 0px;
+}
+.shorts>h1{
+  padding: 0 50px;
 }
 .shortsData
 {
