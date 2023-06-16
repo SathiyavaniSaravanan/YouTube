@@ -5,44 +5,53 @@ const Videos = () => {
   const [video, setVideo] = useState([]);
   const [shorts, setShorts] = useState([]);
 
-  // useEffect(() => {
-  //   let fetchData =async () => {
-  //     let response =await fetch("http://localhost:4000/videos");
-  //     let result = await response.json();
-  //     setVideo(result)
-  //   }
-  //   fetchData();
-  // }, [])
-  // useEffect(() => {
-  //   let fetchData = async () => {
-  //     let response = await fetch("http://localhost:4000/shorts");
-  //     let result = await response.json();
-  //     setShorts(result);
-  //   };
-  //   fetchData();
-  // }, []);
-
-  //////
+  useEffect(() => {
+    let fetchData =async () => {
+      let response =await fetch("http://localhost:4000/videos");
+      let result = await response.json();
+      setVideo(result)
+    }
+    fetchData();
+  })
   useEffect(() => {
     let fetchData = async () => {
-      let response = await fetch("http://localhost:4000/youtubeData");
+      let response = await fetch("http://localhost:4000/shorts");
       let result = await response.json();
-      // console.log(result.videos);
-      setVideo(result.videos);
-      setShorts(result.shorts);
-    }
-    fetchData()
-  },[])
+      setShorts(result);
+    };
+    fetchData();
+  });
+
+  //////
+  // useEffect(() => {
+  //   let fetchData = async () => {
+  //     let response = await fetch("http://localhost:4000/youtubeData");
+  //     let result = await response.json();
+  //     // console.log(result.videos);
+  //     setVideo(result.videos);
+  //     setShorts(result.shorts);
+  //   }
+  //   fetchData()
+  // },[])
   //////
   const removeVideo = (id, channel) => {
-    let result = video.filter(x => x.id !== id);
-    setVideo(result);
+    fetch(`http://localhost:4000/videos/${id}`, {
+      method:'DELETE'
+    })
     alert(`${channel} video has been removed`);
+
+    // let result = video.filter(x => x.id !== id);
+    // setVideo(result);
+    // alert(`${channel} video has been removed`);
   }
   const deleteShorts = (id, title) => {
-    let result = shorts.filter(y => y.id !== id);
-    setShorts(result);
+    fetch(`http://localhost:4000/shorts/${id}`, {
+      method:"DELETE"
+    });
     alert(`${title} has been removed`);
+    // let result = shorts.filter(y => y.id !== id);
+    // setShorts(result);
+    // alert(`${title} has been removed`);
   }
   return (
     <Fragment>

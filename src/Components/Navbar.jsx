@@ -1,6 +1,6 @@
 import YTLogo from "../Images/youtube_logo_icon_167938.png";
-import Alarm from "../Images/alarm_icon-icons.com_48364.png";
-import VideoIcon from "..//Images/videocamera_5631.png";
+// import Alarm from "../Images/alarm_icon-icons.com_48364.png";
+// import VideoIcon from "..//Images/videocamera_5631.png";
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 
